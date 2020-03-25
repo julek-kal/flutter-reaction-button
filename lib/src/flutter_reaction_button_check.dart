@@ -49,7 +49,7 @@ class FlutterReactionButtonCheck extends StatefulWidget {
 
   @override
   _FlutterReactionButtonCheckState createState() =>
-      _FlutterReactionButtonCheckState(initialReaction);
+      _FlutterReactionButtonCheckState(selectedReaction ?? initialReaction);
 }
 
 class _FlutterReactionButtonCheckState
