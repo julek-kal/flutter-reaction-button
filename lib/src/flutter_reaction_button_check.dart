@@ -62,9 +62,16 @@ class _FlutterReactionButtonCheckState
 
   Reaction _selectedReaction;
 
-  bool _isChecked = false;
+  bool _isChecked;
+  
 
   _FlutterReactionButtonCheckState(this._selectedReaction);
+  @override
+  void initState() {
+    // TODO: implement initState
+    _isChecked = widget.selectedReaction != null;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
