@@ -98,7 +98,8 @@ class _ReactionsBoxState extends State<ReactionsBox>
                     elevation: widget.elevation,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(widget.radius)),
-                    child: Wrap(
+                    child: GridView.count(
+                      crossAxisCount: 3,
                       children: widget.reactions
                           .map((reaction) => ReactionsBoxItem(
                                 onReactionClick: (reaction) {
